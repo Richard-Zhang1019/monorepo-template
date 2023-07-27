@@ -1,0 +1,33 @@
+{
+  "name": "package-name",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Richard-Zhang1019"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Richard-Zhang1019",
+  "license": "ISC",
+  "devDependencies": {}
+}
